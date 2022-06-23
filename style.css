@@ -1,0 +1,131 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  font-family: "Manrope", sans-serif;
+}
+body {
+  background-color: hsl(210, 46%, 95%);
+}
+.container {
+  display: flex;
+  margin-top: 15vh;
+  margin-left: 15%;
+  width: 70%;
+  height: 60vh;
+  border-radius: 10px;
+  background-color: white;
+}
+.left {
+  height: 100%;
+  width: 40%;
+}
+.main-img {
+  height: 100%;
+  width: 90%;
+  border-radius: 10px;
+}
+.right {
+  padding-left: 1.8em;
+  width: 50%;
+  padding-right: 3px;
+}
+h2 {
+  color: hsl(217, 19%, 35%);
+}
+.right-para {
+  color: hsl(212, 23%, 69%);
+  font-weight: 500;
+}
+.foot {
+  display: flex;
+  margin-top: 2em;
+  justify-content: space-around;
+  align-items: center;
+}
+.avtar-img {
+  height: 4em;
+  width: 4em;
+  border-radius: 50%;
+}
+h5 {
+  color: hsl(217, 19%, 35%);
+}
+.name {
+  justify-content: top;
+  padding-top: none;
+  display: block;
+  padding-left: none;
+}
+.name > p {
+  color: hsl(212, 23%, 69%);
+}
+.share {
+  float: right;
+}
+
+.btn-img {
+  height: 4vh;
+  width: 2.5vw;
+  border-radius: 50%;
+  display: block;
+}
+.btn-img:hover {
+  background-color: hsl(212, 23%, 69%);
+  color: hsl(212, 23%, 69%);
+}
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 2px;
+  justify-content: space-between;
+  align-items: center;
+}
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(212, 23%, 69%);
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 3px;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 40%;
+  margin-left: -80px;
+}
+.links {
+  padding-left: 4px;
+  padding-top: 2px;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+* Add animation (fade in the popup) */ @-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+a {
+  text-decoration: none;
+  color: hsl(212, 23%, 69%);
+}
